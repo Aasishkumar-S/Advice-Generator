@@ -1,0 +1,121 @@
+.container{
+    display: grid;
+    height: 80vh;
+    /* width: 100vw; */
+    place-items: center;
+}
+.content{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    padding: 20px;
+   
+}
+.btn {
+    width: 200px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover Effect */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Click (Active) Effect */
+.btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25) inset;
+}
+
+
+.message{
+    font-size: 30px;
+    font-weight: 500;
+
+}
+/* 
+.title {
+    font-size: 60px;
+  border-right: solid 3px rgba(0, 0, 0, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0.15rem;
+  width: 0;
+  animation: typing 8s steps(20, end) 1s infinite alternate,
+             blink-caret 0.75s step-end infinite;
+}
+
+ //Type and erase text 
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 100%;
+  }
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+// Blinking cursor 
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(0, 0, 0, 0.75);
+  }
+} */
+.title {
+  font-size: 60px;
+  border-right: solid 3px rgba(0, 0, 0, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0.15rem;
+  width: 0;
+  animation: typing 8s steps(20, end) 1s infinite alternate,
+             blink-caret 0.75s step-end infinite;
+}
+
+/* Type and erase text */
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  40% {
+    width: 20ch; /* match number of characters */
+  }
+  60% {
+    width: 20ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
+
+/* Blinking cursor */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(0, 0, 0, 0.75);
+  }
+}
